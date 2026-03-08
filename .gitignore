@@ -1,0 +1,96 @@
+# Model files (downloaded from releases)
+*.onnx
+*.pt
+*.pkl
+*.pth
+*.tar.gz
+web/lambda/model/
+agent/model/
+
+# Local development files
+agent/sagemaker/inference.py
+agent/model/convert_to_onnx.py
+agent/model/distilled/inference.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# Node.js
+node_modules/
+web/frontend/node_modules/
+web/frontend/dist/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+bun.lockb
+
+# CDK
+cdk.out/
+agent/cdk/cdk.out/
+web/cdk/cdk.out/
+*.js.map
+*.d.ts
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.env
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Secrets (never commit)
+credentials.json
+secrets.json
+*.pem
+*.key
+
+# Data files
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# Claude Code
+CLAUDE.md
+
+# Project notes
+.notes/

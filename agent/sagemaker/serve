@@ -1,0 +1,73 @@
+#!/usr/bin/env python3
+"""
+SageMaker Model Server for ONNX Inference
+
+Implements the SageMaker inference container contract:
+- GET  /ping - Health check
+- POST /invocations - Run inference
+"""
+
+import os
+import sys
+from flask import Flask, request, jsonify
+
+# Add code directory to path
+sys.path.insert(0, '/opt/ml/code')
+
+from inference import model_fn, input_fn, predict_fn, output_fn
+
+app = Flask(__name__)
+
+# Global model
+model = None
+
+
+def load_model():
+    """Load model on startup."""
+    global model
+    model_dir = os.environ.get('SM_MODEL_DIR', '/opt/ml/model')
+    model = model_fn(model_dir)
+    print(f"Model loaded from {model_dir}")
+
+
+@app.route('/ping', methods=['GET'])
+def ping():
+    """Health check endpoint."""
+    return jsonify({'status': 'healthy'}), 200
+
+
+@app.route('/invocations', methods=['POST'])
+def invocations():
+    """Inference endpoint."""
+    global model
+
+    if model is None:
+        return jsonify({'error': 'Model not loaded'}), 503
+
+    try:
+        # Get content type
+        content_type = request.content_type or 'application/json'
+
+        # Deserialize input
+        input_data = input_fn(request.data.decode('utf-8'), content_type)
+
+        # Run prediction
+        prediction = predict_fn(input_data, model)
+
+        # Serialize output
+        accept = request.headers.get('Accept', 'application/json')
+        response_body = output_fn(prediction, accept)
+
+        return response_body, 200, {'Content-Type': 'application/json'}
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+if __name__ == '__main__':
+    # Load model
+    load_model()
+
+    # Start server
+    port = int(os.environ.get('PORT', 8080))
+    app.run(host='0.0.0.0', port=port)
