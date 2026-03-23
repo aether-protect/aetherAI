@@ -2,12 +2,19 @@
 
 **ML-powered security threat detection for HTTP requests**
 
-Aether Protect detects security threats in HTTP requests using a hybrid machine learning model that combines transformer-based text analysis with character-level pattern detection.
+Aether Protect detects security threats in HTTP requests using a dual-backend ML inference engine that supports both a custom ONNX model and SecureBERT 2.0.
+
+## What's New in 1.0.1
+
+- **SecureBERT 2.0 backend** — pre-trained on 13B+ cybersecurity tokens, fine-tuned with LoRA
+- **Unified inference engine** — supports both ONNX and SecureBERT backends, auto-detected or configurable via `MODEL_BACKEND` env var
+- **95% accuracy on real-world payloads** with SecureBERT (up from 80% with ONNX)
+- **10 threat classes** with SecureBERT, 14 with ONNX
 
 ## Features
 
-- **14 Threat Classes**: SQL injection, XSS, command injection, path traversal, SSRF, XXE, LDAP injection, NoSQL injection, malware signatures, crypto miners, red team tools, network intrusions, data exfiltration
-- **Two-Layer Defense**: ML model + AWS WAF managed rules
+- **Dual Backend**: Choose ONNX (fast, 2ms) or SecureBERT (accurate, 22ms)
+- **Three-Layer Defense**: ML model + AWS WAF managed rules + Claude AI analysis
 - **MITRE ATT&CK Mapping**: Threats mapped to MITRE techniques
 - **Web UI**: React dashboard for testing and scan history
 - **Agent Integration**: Strands agent with Claude for AI-powered analysis

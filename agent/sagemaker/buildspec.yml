@@ -1,6 +1,6 @@
 version: 0.2
 
-# Aether Protect ONNX Inference Container Build
+# Aether Protect V2 SecureBERT Inference Container Build
 
 phases:
   pre_build:
@@ -12,9 +12,11 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - echo Building ONNX inference container...
+      - echo Building unified inference container...
+      - cp agent/model/inference_engine.py agent/sagemaker/inference_engine.py
       - cd agent/sagemaker
       - docker build -t $REPOSITORY_URI:latest .
+      - rm -f inference_engine.py
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
   post_build:
     commands:
