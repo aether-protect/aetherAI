@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Aether Protect">
+  <defs>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b5fff" />
+      <stop offset="100%" stop-color="#19a974" />
+    </linearGradient>
+  </defs>
+  <path d="M32 4 12 12v16c0 15.4 8.2 25 20 32 11.8-7 20-16.6 20-32V12L32 4Z" fill="url(#shield)" />
+  <path d="M31 17h2v25h-2zM20 29h24v2H20z" fill="#fff" />
+</svg>

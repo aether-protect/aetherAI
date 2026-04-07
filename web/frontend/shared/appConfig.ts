@@ -1,0 +1,9 @@
+export const APP_NAME = "Aether Protect";
+export const APP_SLUG = "aether-protect";
+export const APP_VERSION = "1.0.0";
+export const APP_TAGLINE = "Security Analysis Dashboard";
+export const AUTH_STORAGE_KEY = `${APP_SLUG}_auth`;
+export const LOCAL_DATABASE_PATH = `./data/${APP_SLUG}.db`;
+export const DEFAULT_AUTH_USERS = "admin:admin,demo:demo";
+export const DEFAULT_TOKEN_SECRET = `${APP_SLUG}-default-secret-change-in-production`;
+export const DEFAULT_TOKEN_EXPIRY_HOURS = 24;
