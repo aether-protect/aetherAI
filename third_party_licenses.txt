@@ -1,0 +1,89 @@
+Third-Party Licenses for Aether Protect
+========================================
+
+This file lists the third-party dependencies used by Aether Protect
+and their respective licenses.
+
+
+Python Dependencies
+-------------------
+
+boto3
+  License: Apache License 2.0
+  URL: https://github.com/boto/boto3
+
+aws-cdk-lib
+  License: Apache License 2.0
+  URL: https://github.com/aws/aws-cdk
+
+constructs
+  License: Apache License 2.0
+  URL: https://github.com/aws/constructs
+
+aws-cdk.aws-bedrock-agentcore-alpha
+  License: Apache License 2.0
+  URL: https://github.com/aws/aws-cdk
+
+strands-agents
+  License: Apache License 2.0
+  URL: https://github.com/strands-agents/sdk-python
+
+bedrock-agentcore
+  License: Apache License 2.0
+  URL: https://github.com/aws/amazon-bedrock-agentcore
+
+flask
+  License: BSD 3-Clause License
+  URL: https://github.com/pallets/flask
+
+python-dotenv
+  License: BSD 3-Clause License
+  URL: https://github.com/theskumar/python-dotenv
+
+
+Node.js / Bun Dependencies
+---------------------------
+
+react
+  License: MIT License
+  URL: https://github.com/facebook/react
+
+react-dom
+  License: MIT License
+  URL: https://github.com/facebook/react
+
+react-markdown
+  License: MIT License
+  URL: https://github.com/remarkjs/react-markdown
+
+hono
+  License: MIT License
+  URL: https://github.com/honojs/hono
+
+vite
+  License: MIT License
+  URL: https://github.com/vitejs/vite
+
+@vitejs/plugin-react
+  License: MIT License
+  URL: https://github.com/vitejs/vite-plugin-react
+
+typescript
+  License: Apache License 2.0
+  URL: https://github.com/microsoft/TypeScript
+
+concurrently
+  License: MIT License
+  URL: https://github.com/open-cli-tools/concurrently
+
+@types/bun
+  License: MIT License
+  URL: https://github.com/oven-sh/bun
+
+@types/react
+  License: MIT License
+  URL: https://github.com/DefinitelyTyped/DefinitelyTyped
+
+@types/react-dom
+  License: MIT License
+  URL: https://github.com/DefinitelyTyped/DefinitelyTyped

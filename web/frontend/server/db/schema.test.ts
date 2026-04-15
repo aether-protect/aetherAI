@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 import { afterAll, beforeAll, describe, expect, test } from "bun:test";
 import { mkdtempSync, rmSync } from "fs";
 import { join } from "path";

@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 /** TypeScript types for the Aether Protect web UI. */
 
 export interface MlResult {

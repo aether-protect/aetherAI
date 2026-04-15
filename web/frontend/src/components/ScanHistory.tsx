@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 import { useState, useEffect } from "react";
 import { getAuthHeaders } from "../contexts/AuthContext";
 import type { ScanRecord, Stats } from "../types";

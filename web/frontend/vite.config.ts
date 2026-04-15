@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 

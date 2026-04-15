@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 """Aether Protect agent system prompts."""
 
 SECURITY_ANALYST_PROMPT = """You are Aether Protect, an expert security analyst AI agent. Your role is to analyze potential security threats and provide actionable recommendations.

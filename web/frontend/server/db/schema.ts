@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 /**
  * SQLite database schema for the local web UI.
  *

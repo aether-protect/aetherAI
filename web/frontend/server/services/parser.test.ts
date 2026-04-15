@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 import { describe, expect, test } from "bun:test";
 import { detectInputFormat, parseInput } from "./parser";
 

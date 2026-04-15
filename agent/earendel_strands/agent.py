@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 """Aether Protect security agent - Strands agent definition."""
 
 from strands import Agent

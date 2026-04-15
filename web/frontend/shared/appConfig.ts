@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 export const APP_NAME = "Aether Protect";
 export const APP_SLUG = "aether-protect";
 export const APP_VERSION = "1.0.0";

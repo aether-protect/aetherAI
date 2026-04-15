@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 import { useState, useCallback } from "react";
 import { useAuth, getAuthHeaders } from "./contexts/AuthContext";
 import { LoginPage } from "./components/LoginPage";

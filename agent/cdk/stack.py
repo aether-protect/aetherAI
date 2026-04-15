@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 """Aether Protect agent CDK stack - SageMaker ML endpoint and infrastructure."""
 
 import os

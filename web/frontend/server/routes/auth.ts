@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 import { Hono } from "hono";
 import { authenticate, createToken, type AppEnv } from "../services/auth";
 

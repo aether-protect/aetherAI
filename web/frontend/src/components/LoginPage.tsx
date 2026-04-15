@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 import { useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import { APP_NAME, APP_TAGLINE } from "../../shared/appConfig";

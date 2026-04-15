@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 import Markdown from "react-markdown";
 import type { ScanResult as ScanResultType } from "../types";
 

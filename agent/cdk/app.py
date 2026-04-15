@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 """Aether Protect agent CDK application."""
 
 import os

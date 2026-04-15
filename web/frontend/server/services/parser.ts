@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 /**
  * HTTP/Curl Request Parser (TypeScript port)
  *

@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from "react";
 import { AUTH_STORAGE_KEY } from "../../shared/appConfig";
 

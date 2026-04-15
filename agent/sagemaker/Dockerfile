@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 # Aether Protect - SageMaker ONNX Inference Container
 
 FROM public.ecr.aws/docker/library/python:3.11-slim

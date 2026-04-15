@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 """
 Aether Protect Strands Agent - AI-powered security analysis agent.
 

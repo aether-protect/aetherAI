@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { AuthProvider } from "./contexts/AuthContext";

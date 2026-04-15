@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 """Aether Protect core scanner - SageMaker ML endpoint and WAF integration."""
 
 import os

@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 /**
  * Python Bridge - Interface to the local Python agent.
  *

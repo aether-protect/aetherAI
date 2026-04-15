@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Aether Protect Contributors. MIT License. See license.txt.
 import { APP_NAME } from "../../shared/appConfig";
 import { getAgentHealth } from "../services/python-bridge";
 
